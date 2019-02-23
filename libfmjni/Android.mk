@@ -28,4 +28,8 @@ endif
 LOCAL_REQUIRED_MODULES := libfmradio.v4l2-fm brcm-uim-sysfs
 LOCAL_SHARED_LIBRARIES += liblog libnativehelper
 
+LOCAL_C_INCLUDES := libnativehelper/include/nativehelper
+
+LOCAL_CFLAGS    += -Wno-error
+
 include $(BUILD_SHARED_LIBRARY)
